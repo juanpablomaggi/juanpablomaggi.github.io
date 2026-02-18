@@ -82,12 +82,17 @@ const config: Config = {
             },
             items: [
                 {
-                    type: "docSidebar",
-                    sidebarId: "tutorialSidebar",
+                    label: "Game Packages",
                     position: "left",
-                    label: "Packages & Docs",
+                    items: [
+                        {
+                            label: "Unity",
+                            to: "/docs/Game Packages/Unity/intro",
+                        },
+                    ],
                 },
                 { to: "/blog", label: "Blog", position: "left" },
+                { to: "/docs/About/me", label: "About Me", position: "left" },
                 {
                     href: "https://github.com/juanpablomaggi",
                     label: "GitHub",
@@ -102,25 +107,12 @@ const config: Config = {
                     title: "Docs",
                     items: [
                         {
-                            label: "Tutorial",
-                            to: "/docs/intro",
-                        },
-                    ],
-                },
-                {
-                    title: "Community",
-                    items: [
-                        {
-                            label: "Stack Overflow",
-                            href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                            label: "Game Packages",
+                            to: "/docs/Game Packages/Unity/intro",
                         },
                         {
-                            label: "Discord",
-                            href: "https://discordapp.com/invite/docusaurus",
-                        },
-                        {
-                            label: "X",
-                            href: "https://x.com/docusaurus",
+                            label: "About",
+                            to: "/docs/About/me",
                         },
                     ],
                 },
