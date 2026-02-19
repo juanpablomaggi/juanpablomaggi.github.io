@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: 18
       - run: npm install
-      - run: npm run generate:packages 
+      - run: node scripts/generate-packages.js 
       - run: npm run build
       - run: npm run deploy
