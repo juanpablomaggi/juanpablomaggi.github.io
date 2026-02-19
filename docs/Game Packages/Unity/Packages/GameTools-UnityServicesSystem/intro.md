@@ -49,7 +49,6 @@ For detailed documentation, guides, and examples, please visit the [official rep
 ## Changelog
 
 ## What's Changed
-
 Fixed critical issue where services with no namespaces doesn't appear on the editor tool.
 
 ## Support

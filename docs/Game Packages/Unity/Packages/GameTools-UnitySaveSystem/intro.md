@@ -48,7 +48,18 @@ For detailed documentation, guides, and examples, please visit the [official rep
 
 ## Changelog
 
-**Full Changelog**: [Changelog 1.0.2](https://github.com/juanpablomaggi/GameTools-UnitySaveSystem/blob/main/CHANGELOG.md#102---2026-02-16)
+### Changed
+
+- Refactored ISaveable to use generics as save data.
+- Made SaveRegistry an internal class to avoid it's use outside of the package.
+- Register of ISaveable is now done through a method on the SaveService class. If the game was already load, it will inject the saved state automatically.
+- LoadGame returns a boolean to indicate if the load was successful or not.
+
+### Added
+
+- Specific methods on SaveService to delete saves.
+- Unit tests for SaveSystem.
+- New documentation.
 
 ## Support
 
