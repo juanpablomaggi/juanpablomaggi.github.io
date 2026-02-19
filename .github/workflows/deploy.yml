@@ -18,7 +18,7 @@ jobs:
       - run: node scripts/generate-packages.js 
       - run: npm run build
 
-       - name: Configure Git identity
+      - name: Configure Git identity
         run: |
           git config --global user.name "juanpablomaggi"
           git config --global user.email "juanpablomaggiv@gmail.com"
