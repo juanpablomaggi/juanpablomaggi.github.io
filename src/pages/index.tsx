@@ -71,7 +71,7 @@ function AboutSection() {
     );
 }
 
-export default function Home(): ReactNode {
+export default function Home() {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
