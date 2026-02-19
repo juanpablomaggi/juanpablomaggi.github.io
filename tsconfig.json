@@ -4,6 +4,5 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "exclude": [".docusaurus", "build"],
-  "include": ["src"]
+  "exclude": [".docusaurus", "build"]
 }

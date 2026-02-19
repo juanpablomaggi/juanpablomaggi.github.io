@@ -2,11 +2,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
     title: "Shank Game Tools",
-    tagline: "Game Dev",
+    tagline: "Welcome to my personal hub for Unity game development tools and resources",
     favicon: "img/favicon.ico",
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -14,25 +12,15 @@ const config: Config = {
         v4: true, // Improve compatibility with the upcoming Docusaurus v4
     },
 
-    // Set the production url of your site here
     url: "https://juanpablomaggi.github.io",
-    // Set the /<baseUrl>/ pathname under which your site is served
-    // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
 
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: "juanpablomaggi", // Usually your GitHub org/user name.
-    projectName: "juanpablomaggi.github.io", // Usually your repo name.
-    deploymentBranch: "gh-pages",
-    trailingSlash: false,
-
+    organizationName: "juanpablomaggi",
+    projectName: "juanpablomaggi.github.io",
 
     onBrokenLinks: "throw",
+    deploymentBranch: "gh-pages",
 
-    // Even if you don't use internationalization, you can use this field to set
-    // useful metadata like html lang. For example, if your site is Chinese, you
-    // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: "en",
         locales: ["en"],
@@ -44,8 +32,6 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
                     editUrl:
                         "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
                 },
@@ -55,11 +41,8 @@ const config: Config = {
                         type: ["rss", "atom"],
                         xslt: true,
                     },
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
                     editUrl:
                         "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-                    // Useful options to enforce blogging best practices
                     onInlineTags: "warn",
                     onInlineAuthors: "warn",
                     onUntruncatedBlogPosts: "warn",
@@ -72,7 +55,6 @@ const config: Config = {
     ],
 
     themeConfig: {
-        // Replace with your project's social card
         image: "img/docusaurus-social-card.jpg",
         colorMode: {
             respectPrefersColorScheme: true,
@@ -85,18 +67,14 @@ const config: Config = {
             },
             items: [
                 {
-                    label: "Game Packages",
+                    type: "docSidebar",
+                    sidebarId: "tutorialSidebar",
                     position: "left",
-                    items: [
-                        {
-                            label: "Unity",
-                            to: "/docs/Game Packages/Unity/intro",
-                        },
-                    ],
+                    label: "Tutorial",
                 },
-                { to: "/docs/About/me", label: "About Me", position: "left" },
+                { to: "/blog", label: "Blog", position: "left" },
                 {
-                    href: "https://github.com/juanpablomaggi",
+                    href: "https://github.com/facebook/docusaurus",
                     label: "GitHub",
                     position: "right",
                 },
@@ -113,8 +91,12 @@ const config: Config = {
                             to: "/docs/Game%20Packages/Unity/intro#available-packages",
                         },
                         {
-                            label: "About",
-                            to: "/docs/About/me",
+                            label: "About me",
+                            to: "/docs/intro",
+                        },
+                        {
+                            label: "Tutorial",
+                            to: "/docs/intro",
                         },
                     ],
                 },
@@ -127,7 +109,7 @@ const config: Config = {
                         },
                         {
                             label: "GitHub",
-                            href: "https://github.com/juanpablomaggi",
+                            href: "https://github.com/facebook/docusaurus",
                         },
                     ],
                 },

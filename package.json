@@ -1,20 +1,19 @@
 {
-  "name": "site",
+  "name": "new-github-page",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "generate:packages": "node scripts/generate-packages.js",
-    "build": "npm run generate:packages && docusaurus build",
-    "deploy": "docusaurus deploy"
-
+    "generate-packages": "node scripts/generate-packages.js"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
@@ -22,8 +21,8 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
