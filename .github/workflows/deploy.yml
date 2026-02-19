@@ -26,7 +26,8 @@ jobs:
 
       - name: Clean build folder
         run: rm -rf build
-        run: npm run clear
+
+      - run: npm run clear
 
       - run: npm run build
       - run: ls -R build
