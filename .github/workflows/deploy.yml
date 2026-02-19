@@ -14,12 +14,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
+
+      - run: rm -rf node_modules
       - run: npm install
       - run: node scripts/generate-packages.js
       - name: Clean build folder
         run: rm -rf build
 
       - run: npm run build
+      - run: ls -R build
 
       - name: Configure Git identity
         run: |
