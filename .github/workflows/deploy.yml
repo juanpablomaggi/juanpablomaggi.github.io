@@ -21,9 +21,11 @@ jobs:
 
       - name: Inspect src/pages/index.tsx
         run: cat src/pages/index.tsx
+        ru: git ls-tree -r HEAD src/pages
 
       - name: Clean build folder
         run: rm -rf build
+        run: npm run clear
 
       - run: npm run build
       - run: ls -R build
