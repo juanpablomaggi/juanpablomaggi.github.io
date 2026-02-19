@@ -6,7 +6,6 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -14,7 +13,7 @@
     "typecheck": "tsc",
     "generate:packages": "node generate-packages.js",
     "build": "npm run generate:packages && docusaurus build",
-}
+    "deploy": "docusaurus deploy"
 
   },
   "dependencies": {
