@@ -15,7 +15,10 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: node scripts/generate-packages.js 
+      - run: node scripts/generate-packages.js
+      - name: Clean build folder
+        run: rm -rf build
+
       - run: npm run build
 
       - name: Configure Git identity
@@ -27,7 +30,6 @@ jobs:
         uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
 
       - run: npm run deploy
         env:
