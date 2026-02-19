@@ -28,4 +28,3 @@ jobs:
         env:
           GIT_USER: juanpablomaggi
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEPLOYMENT_BRANCH: main
