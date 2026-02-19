@@ -31,6 +31,6 @@ If you'd like to collaborate, discuss game development, or have questions about 
 
 - [**GitHub**](https://github.com/juanpablomaggi)
 - [**LinkedIn**](https://www.linkedin.com/in/juan-pablo-maggi-valera-232085226/)
-- [**Email**](juanpablomaggiv@gmail.com)
+- [**Email**](mailto:juanpablomaggiv@gmail.com)
 
 I'm always interested in connecting with other developers and hearing about what you're building! 🎮
