@@ -75,7 +75,7 @@ const config: Config = {
             respectPrefersColorScheme: true,
         },
         navbar: {
-            title: "Unity Game Tools",
+            title: "Shank Game Tools",
             logo: {
                 alt: "My Site Logo",
                 src: "img/logo.svg",
@@ -91,7 +91,6 @@ const config: Config = {
                         },
                     ],
                 },
-                { to: "/blog", label: "Blog", position: "left" },
                 { to: "/docs/About/me", label: "About Me", position: "left" },
                 {
                     href: "https://github.com/juanpablomaggi",
@@ -108,7 +107,7 @@ const config: Config = {
                     items: [
                         {
                             label: "Game Packages",
-                            to: "/docs/Game Packages/Unity/intro",
+                            to: "/docs/Game%20Packages/Unity/intro#available-packages",
                         },
                         {
                             label: "About",
@@ -130,7 +129,7 @@ const config: Config = {
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+            copyright: `Copyright © ${new Date().getFullYear()} Juan Pablo Maggi. Built with Docusaurus.`,
         },
         prism: {
             theme: prismThemes.github,
