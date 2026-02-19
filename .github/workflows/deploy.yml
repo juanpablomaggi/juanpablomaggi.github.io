@@ -17,7 +17,14 @@ jobs:
       - run: npm install
       - run: node scripts/generate-packages.js 
       - run: npm run build
+
+       - name: Configure Git identity
+        run: |
+          git config --global user.name "juanpablomaggi"
+          git config --global user.email "juanpablomaggiv@gmail.com"
+
       - run: npm run deploy
         env:
           GIT_USER: juanpablomaggi
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          DEPLOYMENT_BRANCH: main
