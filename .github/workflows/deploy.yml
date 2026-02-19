@@ -22,9 +22,14 @@ jobs:
         run: |
           git config --global user.name "juanpablomaggi"
           git config --global user.email "juanpablomaggiv@gmail.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/juanpablomaggi/juanpablomaggi.github.io.git
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
 
       - run: npm run deploy
         env:
-          GIT_USER: juanpablomaggi
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_SSH: true
+          DEPLOYMENT_BRANCH: gh-pages
