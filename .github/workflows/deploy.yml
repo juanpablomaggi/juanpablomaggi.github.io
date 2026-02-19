@@ -1,48 +1,39 @@
-name: Deploy Docusaurus site
+name: Deploy Docusaurus Site
 
 on:
   push:
-    branches: [main]
-  release:
-    types: [published]
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
-      - run: rm -rf node_modules
-      - run: npm install
-      - run: node scripts/generate-packages.js
-
-      - name: Inspect src/pages/index.tsx
-        run: cat src/pages/index.tsx
-      
-      - run: git ls-tree -r HEAD src/pages
-
-      - name: Clean build folder
-        run: rm -rf build
-
-      - run: npm run clear
-
+      - run: npm ci
       - run: npm run build
-      - run: ls -R build
 
-      - name: Configure Git identity
-        run: |
-          git config --global user.name "juanpablomaggi"
-          git config --global user.email "juanpablomaggiv@gmail.com"
-
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.7.0
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          path: build
 
-      - run: npm run deploy
-        env:
-          USE_SSH: true
-          DEPLOYMENT_BRANCH: gh-pages
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
