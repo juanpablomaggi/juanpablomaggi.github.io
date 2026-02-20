@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
@@ -15,7 +15,6 @@
 }
 
 .heroBanner :global(.hero__subtitle) {
-  margin-top: 5rem;
   font-weight: 600;
 }
 
@@ -26,10 +25,38 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.aboutSection {
+  padding: 4rem 0;
+  background: var(--ifm-background-surface-secondary);
+}
+
+.aboutSection h2 {
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.aboutSection ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.aboutSection li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.aboutSection li strong {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.aboutSection li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
 }
 
 .buttons {

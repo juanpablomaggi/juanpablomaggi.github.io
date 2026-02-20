@@ -68,11 +68,11 @@ const config: Config = {
             items: [
                 {
                     type: "docSidebar",
-                    sidebarId: "tutorialSidebar",
+                    sidebarId: "mainSidebar",
                     position: "left",
-                    label: "Tutorial",
+                    label: "Game Packages",
                 },
-                { to: "/blog", label: "Blog", position: "left" },
+                { to: "docs/About/me", label: "About Me", position: "left" },
                 {
                     href: "https://github.com/facebook/docusaurus",
                     label: "GitHub",
@@ -92,21 +92,13 @@ const config: Config = {
                         },
                         {
                             label: "About me",
-                            to: "/docs/intro",
-                        },
-                        {
-                            label: "Tutorial",
-                            to: "/docs/intro",
+                            to: "/docs/About/me",
                         },
                     ],
                 },
                 {
                     title: "More",
                     items: [
-                        {
-                            label: "Blog",
-                            to: "/blog",
-                        },
                         {
                             label: "GitHub",
                             href: "https://github.com/facebook/docusaurus",
