@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
+hide_table_of_contents: true
+title: About the package
 ---
 
-# GameTools-UnityServicesSystem
+# Unity Services System
 
 Service locator and loader with editor tools
 
@@ -37,14 +39,6 @@ https://github.com/juanpablomaggi/GameTools-UnityServicesSystem.git#1.0.1
 - **Latest Version:** `1.0.1`
 - **Released:** February 17, 2026
 - **Repository:** [juanpablomaggi/GameTools-UnityServicesSystem](https://github.com/juanpablomaggi/GameTools-UnityServicesSystem)
-
-## Features
-
-For a complete list of features, visit the [repository](https://github.com/juanpablomaggi/GameTools-UnityServicesSystem).
-
-## Documentation
-
-For detailed documentation, guides, and examples, please visit the [official repository](https://github.com/juanpablomaggi/GameTools-UnityServicesSystem).
 
 ## Changelog
 

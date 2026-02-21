@@ -74,7 +74,7 @@ const config: Config = {
                 },
                 { to: "docs/About/me", label: "About Me", position: "left" },
                 {
-                    href: "https://github.com/facebook/docusaurus",
+                    href: "https://github.com/juanpablomaggi",
                     label: "GitHub",
                     position: "right",
                 },

@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
+hide_table_of_contents: true
+title: About the package
 ---
 
-# GameTools-UnitySaveSystem
+# Unity Save System
 
 Small save system for games
 
@@ -37,14 +39,6 @@ https://github.com/juanpablomaggi/GameTools-UnitySaveSystem.git#1.0.2
 - **Latest Version:** `1.0.2`
 - **Released:** February 16, 2026
 - **Repository:** [juanpablomaggi/GameTools-UnitySaveSystem](https://github.com/juanpablomaggi/GameTools-UnitySaveSystem)
-
-## Features
-
-For a complete list of features, visit the [repository](https://github.com/juanpablomaggi/GameTools-UnitySaveSystem).
-
-## Documentation
-
-For detailed documentation, guides, and examples, please visit the [official repository](https://github.com/juanpablomaggi/GameTools-UnitySaveSystem).
 
 ## Changelog
 

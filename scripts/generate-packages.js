@@ -5,11 +5,15 @@ const https = require('https');
 const PACKAGES_CONFIG = [
     {
         name: 'GameTools-UnitySaveSystem',
+        displayName: 'Unity Save System',
+        folderName: 'Save System',
         repo: 'juanpablomaggi/GameTools-UnitySaveSystem',
         description: 'Small save system for games',
     },
     {
         name: 'GameTools-UnityServicesSystem',
+        displayName: 'Unity Services System',
+        folderName: 'Services System',
         repo: 'juanpablomaggi/GameTools-UnityServicesSystem',
         description: 'Service locator and loader with editor tools',
     },
@@ -56,16 +60,17 @@ function createIntroMarkdown(pkg, release) {
         month: 'long',
         day: 'numeric',
     });
-
     const changelog = release.body
         ? release.body.replace(/</g, '\\<').replace(/>/g, '\\>')
         : `See the [releases page](https://github.com/${pkg.repo}/releases) for changelog details.`;
 
     return `---
 sidebar_position: 1
+hide_table_of_contents: true
+title: About the package
 ---
 
-# ${pkg.name}
+# ${pkg.displayName}
 
 ${pkg.description}
 
@@ -101,14 +106,6 @@ https://github.com/${pkg.repo}.git#${release.version}
 - **Released:** ${date}
 - **Repository:** [${pkg.repo}](https://github.com/${pkg.repo})
 
-## Features
-
-For a complete list of features, visit the [repository](https://github.com/${pkg.repo}).
-
-## Documentation
-
-For detailed documentation, guides, and examples, please visit the [official repository](https://github.com/${pkg.repo}).
-
 ## Changelog
 
 ${changelog}
@@ -129,7 +126,7 @@ This package is available under the license specified in the repository.
 
 function createUsageMarkdown() {
     return `---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Usage
@@ -139,7 +136,7 @@ sidebar_position: 2
 
 function createMethodsMarkdown() {
     return `---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Methods & API
@@ -173,7 +170,7 @@ async function main() {
             }
 
             const introContent = createIntroMarkdown(pkg, release);
-            fs.writeFileSync(path.join(pkgDir, 'intro.md'), introContent, 'utf-8');
+            fs.writeFileSync(path.join(pkgDir, 'about.md'), introContent, 'utf-8');
 
             const usagePath = path.join(pkgDir, 'usage.md');
             if (!fs.existsSync(usagePath)) {
@@ -188,12 +185,8 @@ async function main() {
             }
 
             const categoryJson = {
-                label: pkg.name,
+                label: pkg.folderName,
                 position: i + 1,
-                link: {
-                    type: "doc",
-                    id: `Game Packages/Unity/Packages/${pkg.name}/intro`,
-                },
             };
             fs.writeFileSync(
                 path.join(pkgDir, '_category_.json'),

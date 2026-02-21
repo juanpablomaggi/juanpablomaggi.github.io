@@ -4,30 +4,22 @@ sidebar_position: 1
 
 # About Me
 
-## Introduction
+Hi, I'm **Juan Pablo Maggi**, a professional game developer from Uruguay. My journey in the video game industry began more than 10 years ago, when I started creating games on my own and later studied Game Development in Argentina. That passion soon became my career, and since then I’ve been working professionally in the industry.
 
-Hi, I'm **Juan Pablo Maggi**, an Argentinian game developer with **10+ years** of experience creating games and **6+ years** working professionally in the gaming industry. I'm passionate about developing efficient, reusable tools and frameworks that help other developers build amazing games faster.
+I’m passionate about building efficient, reusable tools and frameworks that help other developers create amazing games faster. A while ago, I decided to share those tools with the community so others could benefit from them too.
 
-## What I Do
-
-I specialize in:
-
-- **Game Development**
-- **Tools & Frameworks**
-- **Problem Solving**
+So here we are — I hope my work supports you in your game development journey and that you find my packages useful!
 
 ## Why Open Source?
 
-I believe in sharing knowledge and tools with the community. All my packages are open-source because:
+When I first started developing games, I often found myself reinventing the wheel over and over again. I was constantly copying folders and scripts from one project to another, trying to keep them organized and up to date. It was a lot of work, and I knew there had to be a better way — but I couldn’t find anyone who could help me with that.
 
-1. **Collaboration** - Better tools come from community feedback and contributions
-2. **Transparency** - You can see exactly what my tools do and how they work
-3. **Accessibility** - Game developers of all levels should have access to quality tools
-4. **Learning** - Open source code is a great resource for learning
+That’s why I believe knowledge grows when it’s shared. Open source lets me give back to the community, learn from others, and create tools that anyone can use, improve, and adapt. For me, it’s not just about publishing code — it’s about building a space where developers can collaborate, experiment, and create freely.
 
 ## Let's Connect
 
-If you'd like to collaborate, discuss game development, or have questions about my packages:
+I enjoy collaborating, sharing ideas, and learning from other developers.
+If you’re working on a project and think my tools could help, or if you just want to chat about game development, I’d love to hear from you.
 
 - [**GitHub**](https://github.com/juanpablomaggi)
 - [**LinkedIn**](https://www.linkedin.com/in/juan-pablo-maggi-valera-232085226/)

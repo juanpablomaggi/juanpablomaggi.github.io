@@ -1,8 +1,4 @@
 {
-  "label": "GameTools-UnitySaveSystem",
-  "position": 1,
-  "link": {
-    "type": "doc",
-    "id": "Game Packages/Unity/Packages/GameTools-UnitySaveSystem/intro"
-  }
+  "label": "Save System",
+  "position": 1
 }

@@ -23,3 +23,13 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+jpmaggi:
+  name: Juan Pablo Maggi
+  title: Game Developer
+  image_url: https://github.com/juanpablomaggi.png
+  page: true
+  socials:
+    linkedin: https://www.linkedin.com/in/juan-pablo-maggi-valera-232085226/
+    github: https://github.com/juanpablomaggi
+    mail: mailto:juanpablomaggiv@gmail.com

@@ -1,8 +1,4 @@
 {
-  "label": "GameTools-UnityServicesSystem",
-  "position": 2,
-  "link": {
-    "type": "doc",
-    "id": "Game Packages/Unity/Packages/GameTools-UnityServicesSystem/intro"
-  }
+  "label": "Services System",
+  "position": 2
 }
