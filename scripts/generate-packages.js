@@ -110,6 +110,8 @@ https://github.com/${pkg.repo}.git#${release.version}
 
 ${changelog}
 
+[Full Changelog](https://github.com/${pkg.repo}/blob/main/CHANGELOG.md)
+
 ## Support
 
 If you encounter any issues or have questions:

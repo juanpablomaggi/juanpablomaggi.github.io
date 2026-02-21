@@ -49,6 +49,8 @@ https://github.com/juanpablomaggi/GameTools-UnityServicesSystem.git#1.0.1
 - ServiceEntryDrawer - Fixed issue where empty service entries were not displayed in the dropdown
 - Modified namespace filtering logic to include types with null or empty namespaces
 
+[Full Changelog](https://github.com/juanpablomaggi/GameTools-UnityServicesSystem/blob/main/CHANGELOG.md)
+
 ## Support
 
 If you encounter any issues or have questions:

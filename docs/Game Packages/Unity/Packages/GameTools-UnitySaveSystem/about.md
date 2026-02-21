@@ -55,6 +55,8 @@ https://github.com/juanpablomaggi/GameTools-UnitySaveSystem.git#1.0.2
 - Unit tests for SaveSystem.
 - New documentation.
 
+[Full Changelog](https://github.com/juanpablomaggi/GameTools-UnitySaveSystem/blob/main/CHANGELOG.md)
+
 ## Support
 
 If you encounter any issues or have questions:

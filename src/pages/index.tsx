@@ -1,4 +1,4 @@
-﻿import type { ReactNode } from "react";
+import type { ReactNode } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -16,7 +16,8 @@ function HomepageHeader() {
                     {siteConfig.title}
                 </Heading>
                 <p className={styles.taglineExtended}>
-                    Welcome to my personal hub for Unity game development tools and resources.
+                    Welcome to my personal hub for Unity game development tools
+                    and resources.
                 </p>
                 <div className={styles.buttons}>
                     <Link
@@ -39,29 +40,40 @@ function AboutSection() {
                     <div className="col col--6">
                         <Heading as="h2">About Me</Heading>
                         <p>
-                            I'm a passionate game developer focused on creating reusable, 
-                            high-quality tools and packages for Unity. My goal is to streamline 
-                            game development workflows and help other developers build amazing games faster.
+                            Hi, I’m a professional game developer with over 10
+                            years of experience in creating video games. I’m
+                            passionate about building efficient, reusable tools
+                            and frameworks that help other developers create
+                            amazing games faster — and I share them openly so
+                            the community can learn, improve, and build on them.
                         </p>
                         <p>
-                            Here you'll find comprehensive documentation for all my Unity packages, 
-                            along with blog posts covering game development topics and package updates.
+                            Here you’ll find comprehensive documentation for all
+                            my Unity packages, along with blog posts covering
+                            game development topics and updates. My goal is to
+                            streamline workflows, reduce repetitive tasks, and
+                            support you in your own game development journey.
                         </p>
                     </div>
                     <div className="col col--6">
                         <Heading as="h2">What You'll Find</Heading>
                         <ul>
                             <li>
-                                <strong>Game Packages:</strong> Open-source Unity packages ready to integrate into your projects via UPM
+                                <strong>Game Packages:</strong> Open-source
+                                Unity packages ready to integrate into your
+                                projects via UPM
                             </li>
                             <li>
-                                <strong>Documentation:</strong> Complete guides for installation, usage, and API reference
+                                <strong>Documentation:</strong> Complete guides
+                                for installation, usage, and API reference
                             </li>
                             <li>
-                                <strong>Blog:</strong> Articles about game development, package updates, and best practices
+                                <strong>Blog:</strong> Articles about game
+                                development, package updates, and best practices
                             </li>
                             <li>
-                                <strong>About:</strong> More information about my work and experience
+                                <strong>About:</strong> More information about
+                                my work and experience
                             </li>
                         </ul>
                     </div>
